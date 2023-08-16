@@ -4,5 +4,5 @@
 @tailwind utilities;
 
 .container{
-    @apply md:h-screen pt-40  w-[90%] md:w-[80%] mx-auto;
+    @apply  min-h-screen pt-40 w-[90%] md:w-[80%] mx-auto;
 }

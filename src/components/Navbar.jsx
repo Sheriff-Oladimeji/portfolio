@@ -29,8 +29,8 @@ const Navbar = () => {
       const [nav, setNav] = useState(false);
       const handleNav = () => setNav(!nav);
   return (
-    <nav className="fixed top-0 left-0 z-50 w-full h-[80px] shadow-xl md:shadow-none py-6">
-      <div className="w-[80%] mx-auto hidden md:flex justify-between items-center">
+    <nav className="fixed top-0 left-0 z-50 w-full h-[80px] shadow-xl md:shadow-none py-6 bg-darkBg">
+      <div className="w-[80%] mx-auto hidden md:flex justify-between   items-center">
         <h3 className="text-xl font-bold  text-green ">Sheriff.dev</h3>
 
         <div className="flex gap-10 items-center">
@@ -38,7 +38,7 @@ const Navbar = () => {
             <Link
               key={link.id}
               to={link.url}
-              className="font-bold  hover:text-green cursor-pointer"
+              className=" hover:text-green text-light cursor-pointer"
               smooth={true}
               duration={500}
             >
@@ -47,13 +47,14 @@ const Navbar = () => {
           ))}
         </div>
       </div>
-      <div className="md:hidden">
+     {/* mobile nav */}
+      <div className="md:hidden ">
         <div className="flex w-[90%] mx-auto  justify-between items-center">
           <h3 className="text-xl font-bold  text-green ">Sheriff.dev</h3>
 
           <button
             onClick={handleNav}
-            className="border-none z-50 font-bold outline-none text-xl"
+            className="border-none z-50 font-bold outline-none text-xl text-green"
           >
             {nav ? <AiOutlineClose size={30} /> : <CgMenuRight size={30} />}
           </button>
@@ -71,7 +72,7 @@ const Navbar = () => {
                 key={link.id}
                 to={link.url}
                 onClick={handleNav}
-                className="font-bold text-xl hover:text-green"
+                className="text-xl font-bold hover:text-green text-light cursor-pointer"
                 smooth={true}
                 duration={500}
               >
