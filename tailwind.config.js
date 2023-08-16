@@ -4,10 +4,10 @@ export default {
   theme: {
     extend: {
       colors: {
-        darkBg: "#0F172A",
+        darkBg: "#0A192F",
         bold: "#DBE3F0",
         light: "#8B9AAF",
-        blue: "#0EA5E9",
+        green: "#4BBFAA",
       },
       fontFamily: {
         inter: ["Inter", "sans-serif"],

@@ -2,8 +2,10 @@
 
 const Projects = () => {
   return (
-    <div>Projects</div>
-  )
+    <div className="container" name="projects">
+      Projects
+    </div>
+  );
 }
 
 export default Projects

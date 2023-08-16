@@ -2,8 +2,10 @@
 
 const Contact = () => {
   return (
-    <div>Contact</div>
-  )
+    <div className="container" name="contact">
+      Contact
+    </div>
+  );
 }
 
 export default Contact
