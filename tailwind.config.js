@@ -5,12 +5,13 @@ export default {
     extend: {
       colors: {
         darkBg: "#0F172A",
-        bold: "#DBE3F0",
+        bold: "#E2E8F0",
         light: "#E2E8F0",
         green: "#4DCCB9",
+        gray: "#8892B0",
       },
       fontFamily: {
-        inter: ["Inter", "sans-serif"],
+        inter: ["Inter Tight", "sans-serif"],
       },
     },
   },

@@ -63,7 +63,7 @@ const Navbar = () => {
           className={
             nav
               ? "md:hidden w-full h-screen bg-darkBg top-0 left-0 fixed z-10 duration-500 px-8 py-8"
-              : "md:hidden w-[50px] h-screen bg-white top-0 left-[-100%] fixed z-10 duration-500"
+              : "md:hidden w-0 h-screen bg-white top-0 left-[-100%] fixed z-10 duration-500"
           }
         >
           <div className="flex flex-col h-full justify-center gap-12 items-center ">
