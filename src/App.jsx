@@ -8,7 +8,7 @@ import Projects from "./components/Projects"
 
 const App = () => {
   return (
-    <div className='bg-darkBg relative font-inter text-white'>
+    <div className='bg-darkBg relative flex flex-col justify-between font-inter text-white'>
       <Navbar />
       <Header />
       <About />

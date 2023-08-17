@@ -27,27 +27,31 @@ const links = [
 const Navbar = () => {
   const [nav, setNav] = useState(false);
   const handleNav = () => setNav(!nav);
-   const [isScrollingUp, setIsScrollingUp] = useState(false);
+  const [isScrollingUp, setIsScrollingUp] = useState(false);
+   const [atTop, setAtTop] = useState(true);
 
-   useEffect(() => {
-     let prevScrollPos = window.pageYOffset;
+  useEffect(() => {
+    let prevScrollPos = window.pageYOffset;
 
-     const handleScroll = () => {
-       const currentScrollPos = window.pageYOffset;
-       setIsScrollingUp(prevScrollPos > currentScrollPos);
-       prevScrollPos = currentScrollPos;
-     };
+    const handleScroll = () => {
+      const currentScrollPos = window.pageYOffset;
+      setIsScrollingUp(prevScrollPos > currentScrollPos);
+      prevScrollPos = currentScrollPos;
 
-     window.addEventListener("scroll", handleScroll);
-     return () => {
-       window.removeEventListener("scroll", handleScroll);
-     };
-   }, []);
+      // Update the atTop state based on the currentScrollPos
+      setAtTop(currentScrollPos === 0);
+    };
+
+    window.addEventListener("scroll", handleScroll);
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
+  }, []);
 
   return (
     <nav
       className={`w-full h-[80px] py-6 bg-darkBg ${
-        isScrollingUp ? "fixed top-0 left-0 z-50 shadow-xl" : ""
+        isScrollingUp && !atTop ? "fixed top-0 left-0 z-50 shadow-xl" : ""
       }`}
     >
       <div className="w-[80%] mx-auto hidden md:flex justify-between   items-center">
@@ -92,7 +96,7 @@ const Navbar = () => {
                 key={link.id}
                 to={link.url}
                 onClick={handleNav}
-                className="text-xl font-bold hover:text-green text-light cursor-pointer"
+                className="text-2xl  tracking-widest font-bold hover:text-green text-light cursor-pointer"
                 smooth={true}
                 duration={500}
               >

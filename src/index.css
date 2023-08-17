@@ -3,6 +3,16 @@
 @tailwind components;
 @tailwind utilities;
 
+@layer base {
+  html {
+      scroll-behavior: smooth;
+    }
+    *{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+}
 .container{
     @apply  pt-24 w-[90%] md:w-[80%] mx-auto;
 }
