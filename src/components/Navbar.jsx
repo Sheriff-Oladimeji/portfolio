@@ -1,6 +1,6 @@
 import { Link } from "react-scroll";
-import { useState } from "react";
-import { CgMenuRight } from "react-icons/cg"
+import { useState , useEffect} from "react";
+import { FiMenu} from "react-icons/fi";
 import { AiOutlineClose } from "react-icons/ai";
 const links = [
   {
@@ -25,11 +25,31 @@ const links = [
   },
 ];
 const Navbar = () => {
+  const [nav, setNav] = useState(false);
+  const handleNav = () => setNav(!nav);
+   const [isScrollingUp, setIsScrollingUp] = useState(false);
 
-      const [nav, setNav] = useState(false);
-      const handleNav = () => setNav(!nav);
+   useEffect(() => {
+     let prevScrollPos = window.pageYOffset;
+
+     const handleScroll = () => {
+       const currentScrollPos = window.pageYOffset;
+       setIsScrollingUp(prevScrollPos > currentScrollPos);
+       prevScrollPos = currentScrollPos;
+     };
+
+     window.addEventListener("scroll", handleScroll);
+     return () => {
+       window.removeEventListener("scroll", handleScroll);
+     };
+   }, []);
+
   return (
-    <nav className="fixed top-0 left-0 z-50 w-full h-[80px] shadow-xl md:shadow-none py-6 bg-darkBg">
+    <nav
+      className={`w-full h-[80px] py-6 bg-darkBg ${
+        isScrollingUp ? "fixed top-0 left-0 z-50 shadow-xl" : ""
+      }`}
+    >
       <div className="w-[80%] mx-auto hidden md:flex justify-between   items-center">
         <h3 className="text-xl font-bold  text-green ">Sheriff.dev</h3>
 
@@ -47,16 +67,16 @@ const Navbar = () => {
           ))}
         </div>
       </div>
-     {/* mobile nav */}
+      {/* mobile nav */}
       <div className="md:hidden ">
         <div className="flex w-[90%] mx-auto  justify-between items-center">
           <h3 className="text-xl font-bold  text-green ">Sheriff.dev</h3>
 
           <button
             onClick={handleNav}
-            className="border-none z-50 font-bold outline-none text-xl text-green"
+            className="border-none z-50 font-bold outline-none text-2xl text-bold "
           >
-            {nav ? <AiOutlineClose size={30} /> : <CgMenuRight size={30} />}
+            {nav ? <AiOutlineClose size={30} /> : <FiMenu size={30} />}
           </button>
         </div>
         <div
