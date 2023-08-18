@@ -14,5 +14,5 @@
     }
 }
 .container{
-    @apply  pt-24 w-[90%] md:w-[80%] mx-auto;
+    @apply  min-h-screen w-[90%] md:w-[80%] mx-auto;
 }
