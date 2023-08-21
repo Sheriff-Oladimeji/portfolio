@@ -1,12 +1,15 @@
 import resume from "../assets/Sheriff-Resume.pdf";
 const Header = () => {
   return (
-    <header className="container mb-36 md:mb-0" name="home">
-      <div className="flex flex-col h-full pt-12 md:pt-24 w-full  gap-8">
+    <header className="container" name="home">
+      <div className="flex flex-col h-full pt-16 md:pt-20 w-full  gap-6">
         <span className="text-green text-lg font-semibold">Hi, my name is</span>
         <h1 className="text-4xl sm:text-5xl md:text-7xl font-semibold text-bold  tracking-widest ">
           Sheriff Oladimeji
         </h1>
+        <h2 className="text-3xl sm:text-4xl md:text-6xl font-semibold text-gray  tracking-wider ">
+          Creative Frontend Developer
+        </h2>
 
         <p className="text-gray max-w-lg md:max-w-3xl  text-lg ">
           I'm a frontend developer passionate about crafting engaging digital
@@ -17,7 +20,7 @@ const Header = () => {
         <a
           href={resume}
           download={true}
-          className="border-green border-2 rounded-md py-4 px-2 outline-none hover:bg-transparent w-[200px] bg-green active:bg-transparent hover:shadow-xl text-bold font-bold text-center tracking-wider"
+          className="border-green border-2 rounded-md py-4 px-2 outline-none  w-[200px]  bg-transparent hover:shadow-xl text-bold font-bold text-center tracking-widest"
         >
           View my resume
         </a>
