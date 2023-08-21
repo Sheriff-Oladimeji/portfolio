@@ -11,7 +11,7 @@ const Header = () => {
           Creative Frontend Developer
         </h2>
 
-        <p className="text-gray max-w-lg md:max-w-3xl  text-lg ">
+        <p className="text-gray max-w-md md:max-w-3xl  text-lg ">
           I'm a frontend developer passionate about crafting engaging digital
           experiences. I have skills in building accessible, user-friendly
           products. I enjoy bringing ideas to life through clean, functional
@@ -20,7 +20,7 @@ const Header = () => {
         <a
           href={resume}
           download={true}
-          className="border-green border-2 rounded-md py-4 px-2 outline-none  w-[200px]  bg-transparent hover:shadow-xl text-bold font-bold text-center tracking-widest"
+          className="border-green border-2 rounded-md py-4 px-2 outline-none  w-[200px]  bg-transparent hover:shadow-[5px_5px_0px_0px_#4DCCB9] active:shadow-[5px_5px_0px_0px_#4DCCB9] text-bold font-bold text-center tracking-widest"
         >
           View my resume
         </a>
