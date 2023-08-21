@@ -137,7 +137,7 @@ const Navbar = () => {
             href={link.id === 3 ? "mailto:" + link.url : link.url}
             target="_blank"
             rel="noopener noreferrer"
-            className={`w-[160px] flex h-[60px] justify-between items-center ml-[-100px] hover:ml-[-10px] duration-300 p-6 ${
+            className={`w-[160px] flex h-[60px] justify-between items-center ml-[-100px] hover:ml-[-10px] duration-300 p-6  ${
               link.id === 1
                 ? "bg-black"
                 : link.id === 2
