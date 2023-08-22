@@ -42,6 +42,9 @@ const About = () => {
               <p>
                 <span className="text-green text-2xl">‣</span> Sass
               </p>
+              <p>
+                <span className="text-green text-2xl">‣</span> Node.js
+              </p>
             </span>
             <span>
               <p>
@@ -52,6 +55,9 @@ const About = () => {
               </p>
               <p>
                 <span className="text-green text-2xl">‣</span> Next.js
+              </p>
+              <p>
+                <span className="text-green text-2xl">‣</span> Tailwind CSS
               </p>
             </span>
           </div>
