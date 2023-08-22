@@ -2,7 +2,7 @@
 const About = () => {
   return (
     <main className="container text-gray" name="about">
-      <div className="flex justify-between flex-col gap-12  md:flex-row items-center w-full">
+      <div className="flex justify-between flex-col gap-16  md:flex-row items-center w-full">
         <div className="md:w-[70%] flex flex-col gap-3">
           <h1 className="text-4xl sm:text-5xl font-bold mb-2 text-bold">
             Me, Myself & I
@@ -24,7 +24,7 @@ const About = () => {
           <p>
             In my free time, I enjoy contributing to open source projects and
             expanding my skills. I am a quick learner who is always improving by
-            learning new techniques and staying up to date on web development
+            learning new technologies and staying up to date on web development
             trends. I am seeking a role where I can apply my skills and grow as
             a developer.
           </p>
@@ -33,30 +33,30 @@ const About = () => {
           </h3>
           <div className="flex gap-12">
             <span>
-              <p>
+              <p className="flex items-center gap-2">
                 <span className="text-green text-2xl">‣</span> React
               </p>
-              <p>
+              <p className="flex items-center gap-2">
                 <span className="text-green text-2xl">‣</span> JavaScript (ES6+)
               </p>
-              <p>
+              <p className="flex items-center gap-2">
                 <span className="text-green text-2xl">‣</span> Sass
               </p>
-              <p>
+              <p className="flex items-center gap-2">
                 <span className="text-green text-2xl">‣</span> Node.js
               </p>
             </span>
             <span>
-              <p>
+              <p className="flex items-center gap-2">
                 <span className="text-green text-2xl">‣</span> Git{" "}
               </p>
-              <p>
+              <p className="flex items-center gap-2">
                 <span className="text-green text-2xl">‣</span> TypeScript
               </p>
-              <p>
+              <p className="flex items-center gap-2">
                 <span className="text-green text-2xl">‣</span> Next.js
               </p>
-              <p>
+              <p className="flex items-center gap-2">
                 <span className="text-green text-2xl">‣</span> Tailwind CSS
               </p>
             </span>
