@@ -34,30 +34,30 @@ const About = () => {
           <div className="flex gap-12">
             <span>
               <p className="flex items-center gap-2">
-                <span className="text-green text-2xl">‣</span> React
+                <span className="text-green text-3xl">•</span> React
               </p>
               <p className="flex items-center gap-2">
-                <span className="text-green text-2xl">‣</span> JavaScript (ES6+)
+                <span className="text-green text-3xl">•</span> JavaScript (ES6+)
               </p>
               <p className="flex items-center gap-2">
-                <span className="text-green text-2xl">‣</span> Sass
+                <span className="text-green text-3xl">•</span> Sass
               </p>
               <p className="flex items-center gap-2">
-                <span className="text-green text-2xl">‣</span> Node.js
+                <span className="text-green text-3xl">•</span> Node.js
               </p>
             </span>
             <span>
               <p className="flex items-center gap-2">
-                <span className="text-green text-2xl">‣</span> Git{" "}
+                <span className="text-green text-3xl">•</span> Git{" "}
               </p>
               <p className="flex items-center gap-2">
-                <span className="text-green text-2xl">‣</span> TypeScript
+                <span className="text-green text-3xl">•</span> TypeScript
               </p>
               <p className="flex items-center gap-2">
-                <span className="text-green text-2xl">‣</span> Next.js
+                <span className="text-green text-3xl">•</span> Next.js
               </p>
               <p className="flex items-center gap-2">
-                <span className="text-green text-2xl">‣</span> Tailwind CSS
+                <span className="text-green text-3xl">•</span> Tailwind CSS
               </p>
             </span>
           </div>
