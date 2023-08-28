@@ -8,14 +8,13 @@ const Header = () => {
           Sheriff Oladimeji
         </h1>
         <h2 className="text-3xl sm:text-4xl md:text-6xl font-semibold text-gray  tracking-wider ">
-          Creative Frontend Developer
+          I'm a Frontend Developer
         </h2>
 
         <p className="text-gray max-w-md md:max-w-3xl  text-lg ">
-          I'm a frontend developer passionate about crafting engaging digital
-          experiences. I have skills in building accessible, user-friendly
-          products. I enjoy bringing ideas to life through clean, functional
-          design and code.
+          A passionate frontend developer dedicated to crafting captivating
+          digital experiences, I love the thrill of bringing ideas to life
+          through clean, functional design and code. 
         </p>
         <a
           href={resume}
