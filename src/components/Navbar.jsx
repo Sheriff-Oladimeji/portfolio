@@ -62,7 +62,7 @@ const Navbar = () => {
       setIsScrollingUp(prevScrollPos > currentScrollPos);
       prevScrollPos = currentScrollPos;
 
-      // Update the atTop state based on the currentScrollPos
+      
       setAtTop(currentScrollPos === 0);
     };
 
