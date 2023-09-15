@@ -1,11 +1,11 @@
 
 const Contact = () => {
   return (
-    <div className="flex flex-col gap-4 items-center justify-center container">
+    <div className="flex flex-col gap-4 items-center justify-center container" name="contact">
       <h1 className="text-4xl sm:text-5xl font-bold mb-2 text-bold ">
         Contact Me
       </h1>
-      <p>
+      <p className="text-center">
         I'm currently looking for new opportunities. I'm Open to junior
         developer roles and freelancing gigs.
       </p>

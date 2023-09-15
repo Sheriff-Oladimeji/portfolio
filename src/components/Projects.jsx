@@ -1,9 +1,12 @@
 import projects from "../data/projects";
-import { FiGithub } from "react-icons/fi"
-import {LiaExternalLinkAltSolid} from "react-icons/lia"
+import { FiGithub } from "react-icons/fi";
+import { LiaExternalLinkAltSolid } from "react-icons/lia";
 const Projects = () => {
   return (
-    <div className="container flex flex-col gap-12 mt-20 md:mt-5" name="projects">
+    <div
+      className="container flex flex-col gap-12 mt-20 md:mt-5"
+      name="projects"
+    >
       <h2 className="text-4xl sm:text-5xl font-bold mb-2 text-bold">
         Some Things I’ve Built
       </h2>
@@ -27,14 +30,16 @@ const Projects = () => {
                 ))}
               </div>
               <div className="flex gap-6 items-center mt-4">
-                <a
-                  className="text-white hover:text-green flex gap-2 items-center"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  href={project.github}
-                >
-                  <FiGithub size={25} /> <span>Code</span>
-                </a>
+                {project.github && (
+                  <a
+                    className="text-white hover:text-green flex gap-2 items-center"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    href={project.github}
+                  >
+                    <FiGithub size={25} /> <span>Code</span>
+                  </a>
+                )}
                 <a
                   className="text-white hover:text-green flex gap-2 items-center"
                   target="_blank"
