@@ -2,10 +2,12 @@ const projects = [
   {
     id: 1,
     title: "Bookr",
-    desc: "Bookr is an accommodation booking website. It provides users with the ability to book hotel rooms for their vacation. It includes a user data form, a working calendar for date selection, three room types to choose from, a working cart to display the price breakdown, and additional information tabs such as contact information.",
+    desc: "Bookr is an accommodation booking website that  provides users with the ability to book hotel rooms for their vacation.Its features includes a user data form, calendar, different room types to choose from, and a cart to display the price.",
     tech: ["React", "Tailwind CSS", "Redux"],
 
     image: "/bookr.png",
+    github: "https://github.com/Sheriff-Oladimeji/bookr",
+    link: "https://bookr.pages.dev/",
   },
   {
     id: 2,
@@ -14,6 +16,17 @@ const projects = [
     tech: ["Next.js", "Tailwind CSS", "MongoDB"],
 
     image: "/sparkle.png",
+    github: "https://github.com/Sheriff-Oladimeji/Sparkle",
+    link: "https://sparkle-mu.vercel.app/",
+  },
+  {
+    id: 3,
+    title: "LogoIpsum",
+    desc: "As part of a freelance web development project, I collaborated with a friend to create an e-learning website called Logo Ipsum for a client.",
+    tech: ["React", "Tailwind CSS", "Redux"],
+
+    github: false,
+    link: "https://e-learning-efw.pages.dev/",
   },
 ];
 

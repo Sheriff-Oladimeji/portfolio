@@ -1,34 +1,50 @@
 import projects from "../data/projects";
-
+import { FiGithub } from "react-icons/fi"
+import {LiaExternalLinkAltSolid} from "react-icons/lia"
 const Projects = () => {
   return (
-    <div
-      className="container flex flex-col gap-12"
-      name="projects"
-    >
+    <div className="container flex flex-col gap-12 mt-20 md:mt-5" name="projects">
       <h2 className="text-4xl sm:text-5xl font-bold mb-2 text-bold">
         Some Things I’ve Built
       </h2>
 
-      <main className="flex flex-col gap-12 w-full">
+      <main className="grid md:grid-cols-2  gap-20">
         {projects.map((project) => (
           <div
             key={project.id}
-            className="flex flex-col md:flex-row gap-12 w-full"
+            className="flex flex-col  items-center   shadow-xl py-6 bg-[#0F172A] rounded-md"
           >
-            <div className="flex-1 shadow-xl  w-full">
-              <img
-                src={project.image}
-                alt={project.title}
-                className="object-cover h-[400px]"
-              />
-            </div>
-
-            <div className="w-full flex-1 h-[400px]">
-              <h2 className="text-3xl sm:text-4xl font-semibold mb-2 text-bold">
+            <div className="w-[90%] mx-auto flex flex-col gap-4">
+              <h2 className="text-3xl  font-semibold mb-2 text-bold">
                 {project.title}
               </h2>
-              <p>{project.desc}</p>
+              <p className="text-gray">{project.desc}</p>
+              <div className="text-white flex flex-wrap gap-6 items-center">
+                {project.tech.map((tool, index) => (
+                  <span key={index} className="button py-1 px-2">
+                    {tool}
+                  </span>
+                ))}
+              </div>
+              <div className="flex gap-6 items-center mt-4">
+                <a
+                  className="text-white hover:text-green flex gap-2 items-center"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  href={project.github}
+                >
+                  <FiGithub size={25} /> <span>Code</span>
+                </a>
+                <a
+                  className="text-white hover:text-green flex gap-2 items-center"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  href={project.link}
+                >
+                  <LiaExternalLinkAltSolid size={25} />
+                  <span>Live Demo</span>
+                </a>
+              </div>
             </div>
           </div>
         ))}

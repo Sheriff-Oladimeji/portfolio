@@ -12,7 +12,7 @@ const Contact = () => {
 
       <a
         href="mailto:dimejiademola5@gmail.com"
-        className="border-green border-2 rounded-md py-4 px-2 outline-none  w-[200px]  bg-transparent hover:shadow-[5px_5px_0px_0px_#4DCCB9] active:shadow-[5px_5px_0px_0px_#4DCCB9] text-bold font-bold text-center tracking-widest"
+        className="button py-4 px-4"
         target="_blank"
         rel="noopener noreferrer"
       >

@@ -8,21 +8,21 @@ const About = () => {
             Me, Myself & I
           </h1>
 
-          <p>
+          <p className="max-w-4xl">
             Hello! My name is Sheriff Oladimeji and I am a frontend web
             developer with a passion for creating intuitive and aesthetically
-            pleasing user experiences. I have over 1 year of  experience
-            building and designing responsive, mobile-friendly websites and web
+            pleasing user experiences. I have over 1 year of experience building
+            and designing responsive, mobile-friendly websites and web
             applications.
           </p>
-          <p>
+          <p className="max-w-4xl">
             I am a curious person who loves building cool stuff using the latest
             web technologies and frameworks. I am detail-oriented, focused on
             writing clean, maintainable code. I employ a mobile-first approach
             and leverage modern CSS techniques to create fast, responsive site
             experiences.
           </p>
-          <p>
+          <p className="max-w-4xl">
             In my free time, I enjoy contributing to open source projects and
             expanding my skills. I am a quick learner who is always improving by
             learning new technologies and staying up to date on web development
