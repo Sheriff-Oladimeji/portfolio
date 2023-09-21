@@ -4,7 +4,7 @@ import { LiaExternalLinkAltSolid } from "react-icons/lia";
 const Projects = () => {
   return (
     <div className="container flex flex-col gap-12 " name="projects">
-      <h2 className="text-4xl sm:text-5xl font-bold mb-2 text-bold">
+      <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold mb-2 text-bold">
         Some Things I’ve Built
       </h2>
 
@@ -15,7 +15,7 @@ const Projects = () => {
             className="flex flex-col  items-center   shadow-xl py-6 bg-[#0b172b] rounded-md cursor-pointer  "
           >
             <div className="w-[90%] mx-auto flex flex-col gap-4">
-              <h2 className="text-3xl  font-semibold mb-2 text-bold hover:text-green">
+              <h2 className="text-2xl md:text-3xl  font-semibold mb-2 text-bold hover:text-green">
                 {project.title}
               </h2>
               <p className="text-gray">{project.desc}</p>

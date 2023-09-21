@@ -4,7 +4,7 @@ const About = () => {
     <main className="container text-gray" name="about">
       <div className="flex justify-between flex-col gap-16  md:flex-row items-center w-full">
         <div className="md:w-[100%] flex flex-col gap-3">
-          <h1 className="text-4xl sm:text-5xl font-bold mb-2 text-bold ">
+          <h1 className="text-3xl sm:text-4xl md:text-5xl font-bold mb-2 text-bold ">
             Me, Myself & I
           </h1>
 

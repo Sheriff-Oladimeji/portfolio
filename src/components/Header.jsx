@@ -2,7 +2,7 @@ import resume from "../assets/Sheriff-Resume.pdf";
 const Header = () => {
   return (
     <header className="container" name="home">
-      <div className="flex flex-col h-full pt-24 w-full  gap-6">
+      <div className="flex flex-col h-full pt-20 w-full  gap-6">
         <span className="text-green text-lg font-semibold">Hi, my name is</span>
         <h1 className="text-4xl sm:text-5xl md:text-7xl font-semibold text-bold  tracking-widest ">
           Sheriff Oladimeji
