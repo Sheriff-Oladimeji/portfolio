@@ -14,7 +14,7 @@
     }
 }
 .container{
-    @apply min-h-screen w-[90%] md:w-[80%] mx-auto;
+    @apply min-h-screen w-[90%] md:w-[80%] mx-auto mb-12;
 }
 .button {
   @apply border-green border rounded-md  outline-none  w-max  bg-transparent hover:shadow-[5px_5px_0px_0px_#4DCCB9] active:shadow-[5px_5px_0px_0px_#4DCCB9] text-bold font-bold text-center tracking-widest;
