@@ -8,12 +8,17 @@ const Projects = () => {
         Some Things I’ve Built
       </h2>
 
-      <main className="grid md:grid-cols-2  gap-10">
+      <main className="grid md:grid-cols-2  gap-14">
         {projects.map((project) => (
           <div
             key={project.id}
-            className="flex flex-col  items-center   shadow-xl py-6 bg-[#0b172b] rounded-md cursor-pointer  "
+            className="flex flex-col  items-center gap-4  shadow-xl pb-6 bg-[#0b172b] rounded-md cursor-pointer  hover:scale-105"
           >
+            <img
+              src={project.image}
+              alt={project.title}
+              className="rounded-t-md "
+            />
             <div className="w-[90%] mx-auto flex flex-col gap-4">
               <h2 className="text-2xl md:text-3xl  font-semibold mb-2 text-bold hover:text-green">
                 {project.title}
