@@ -14,7 +14,7 @@ const projects = [
     desc: "Sparkle is a creative agency website that serves as a platform to provide exceptional services to their clients, showcasing their innovative work and fostering meaningful interactions with potential partners.",
     tech: ["Next.js", "Tailwind CSS", "MongoDB"],
 
-    image: "/Sparkle.png",
+    image: "/sparkle.png",
     github: "https://github.com/Sheriff-Oladimeji/Sparkle",
     link: "https://sparkle-mu.vercel.app/",
   },

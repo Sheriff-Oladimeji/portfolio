@@ -1,3 +1,4 @@
+/* eslint-disable react/no-unescaped-entities */
 
 const Header = () => {
 const resumeLink = "https://drive.google.com/uc?export=download&id=1-uRe8asCDWo-3tI5ptk_g5IOUPp0F2pj";
