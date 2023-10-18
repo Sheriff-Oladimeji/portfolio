@@ -28,6 +28,15 @@ const projects = [
     github: false,
     link: "https://e-learning-efw.pages.dev/",
   },
+  {
+    id: 4,
+    title: "ClearLink",
+    desc: "Experience the future of communication with ClearLink – where crystal-clear video conferencing meets unparalleled simplicity.",
+    tech: ["Next.js", "Tailwind CSS", "TypeScript"],
+
+    github: "https://github.com/Sheriff-Oladimeji/ClearLink",
+    link: "https://clear-link-beige.vercel.app/",
+  },
 ];
 
 export default projects;

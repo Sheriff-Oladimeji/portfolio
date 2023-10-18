@@ -44,16 +44,22 @@ const About = () => {
               <p className="flex items-center gap-2">
                 <span className="text-green text-3xl">•</span> Node.js
               </p>
+              <p className="flex items-center gap-2">
+                <span className="text-green text-3xl">•</span> MongoDB
+              </p>
             </span>
             <span>
               <p className="flex items-center gap-2">
-                <span className="text-green text-3xl">•</span> Git{" "}
+                <span className="text-green text-3xl">•</span> Git & GitHub
               </p>
               <p className="flex items-center gap-2">
                 <span className="text-green text-3xl">•</span> TypeScript
               </p>
               <p className="flex items-center gap-2">
                 <span className="text-green text-3xl">•</span> Next.js
+              </p>
+              <p className="flex items-center gap-2">
+                <span className="text-green text-3xl">•</span> Redux
               </p>
             </span>
           </div>
