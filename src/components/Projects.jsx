@@ -1,9 +1,13 @@
+import AOS from "aos";
+import "aos/dist/aos.css";
+AOS.init();
 import projects from "../data/projects";
 import { FiGithub } from "react-icons/fi";
 import { LiaExternalLinkAltSolid } from "react-icons/lia";
 const Projects = () => {
+  
   return (
-    <div className="container flex flex-col gap-12 " name="projects">
+    <div className="container flex flex-col gap-14 " name="projects">
       <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold mb-2 text-bold">
         Some Things I’ve Built
       </h2>
@@ -13,6 +17,7 @@ const Projects = () => {
           <div
             key={project.id}
             className="flex flex-col  items-center gap-4  shadow-xl pb-6 bg-[#0b172b] rounded-md cursor-pointer  hover:scale-105"
+            data-aos="zoom-in-up"
           >
             <img
               src={project.image}
@@ -24,7 +29,7 @@ const Projects = () => {
                 {project.title}
               </h2>
               <p className="text-gray">{project.desc}</p>
-              <div className="text-white flex flex-wrap gap-6 items-center">
+              <div className="text-white flex flex-wrap gap-4 sm:gap-6 md:gap-8 items-center">
                 {project.tech.map((tool, index) => (
                   <span key={index} className="button py-1 px-2">
                     {tool}
