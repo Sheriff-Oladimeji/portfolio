@@ -16,7 +16,7 @@ const Projects = () => {
         {projects.map((project) => (
           <div
             key={project.id}
-            className="flex flex-col  items-center gap-4  shadow-xl pb-6 bg-[#0b172b] rounded-md cursor-pointer  hover:scale-105"
+            className="flex flex-col  items-center gap-4  shadow-xl pb-6 bg-[#0b172b] rounded-md cursor-pointer  "
             data-aos="zoom-in-up"
           >
             <img
