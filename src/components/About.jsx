@@ -7,27 +7,29 @@ const About = () => {
           <h1 className="text-3xl sm:text-4xl md:text-5xl font-bold mb-2 text-bold ">
             Me, Myself & I
           </h1>
-
           <p className="max-w-3xl">
-            Hello! My name is Sheriff Oladimeji and I am a frontend web
-            developer with a passion for creating intuitive and aesthetically
-            pleasing user experiences. I have over 1 year of experience building
-            and designing responsive, mobile-friendly websites and web
-            applications.
-          </p>
+            {" "}
+            I'm Sheriff Oladimeji, a curious full-stack developer with a passion
+            for creating intuitive digital experiences. Though my expertise
+            centers around frontend development, I enjoy
+            working across the entire stack to bring ideas to life.
+          </p>{" "}
           <p className="max-w-3xl">
-            I am a curious person who loves building cool stuff using the latest
-            web technologies and frameworks. I am detail-oriented, focused on
-            writing clean, maintainable code. I employ a mobile-first approach
-            and leverage modern CSS techniques to create fast, responsive site
-            experiences.
-          </p>
+            {" "}
+            I first started coding out of fascination with hacking and a desire
+            to understand the inner workings of computers and systems. What
+            began as a hobby fueled by curiosity has grown into a craft I am
+            deeply passionate about. I love using my skills to build products
+            that solve real problems and connect with users.{" "}
+          </p>{" "}
+          
           <p className="max-w-3xl">
-            Beyond development, I actively contribute to open source projects,
-            continually expanding my skill set. As a quick learner committed to
-            staying current with web development trends, I am now seeking a role
-            where I can apply my skills, contribute meaningfully, and further
-            grow as a developer.
+            {" "}
+            As someone who values collaboration and staying on the cutting edge,
+            I'm excited by opportunities to join a development team where I can
+            share my skills and experience while continuing to evolve as a
+            coder. Most of all, I want to build things that matter - things that
+            have an impact.{" "}
           </p>
           <h3 className="font-semibold text-light text-xl">
             Some of my technical skills include:
@@ -42,7 +44,7 @@ const About = () => {
               </p>
 
               <p className="flex items-center gap-2">
-                <span className="text-green text-3xl">•</span> Node.js
+                <span className="text-green text-3xl">•</span> Python
               </p>
               <p className="flex items-center gap-2">
                 <span className="text-green text-3xl">•</span> MongoDB
@@ -59,7 +61,7 @@ const About = () => {
                 <span className="text-green text-3xl">•</span> Next.js
               </p>
               <p className="flex items-center gap-2">
-                <span className="text-green text-3xl">•</span> Redux
+                <span className="text-green text-3xl">•</span> Redux/Zustand
               </p>
             </span>
           </div>
