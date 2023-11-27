@@ -31,7 +31,10 @@ const Projects = () => {
               <p className="text-gray">{project.desc}</p>
               <div className="text-white flex flex-wrap gap-4 sm:gap-6 md:gap-8 items-center">
                 {project.tech.map((tool, index) => (
-                  <span key={index} className="button py-1 px-2">
+                  <span
+                    key={index}
+                    className=" rounded-full  outline-none  w-max font-medium text-center text-[#5ADFCB] py-1 px-2 bg-[#122B39] text-sm"
+                  >
                     {tool}
                   </span>
                 ))}
