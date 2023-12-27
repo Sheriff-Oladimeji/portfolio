@@ -14,6 +14,9 @@ const sidelinks = [
     url: "https://www.linkedin.com/in/sheriff-oladimeji-022362255/",
   },
  
+
+
+ 
 ];
 const Contact = () => {
   return (
@@ -32,8 +35,6 @@ const Contact = () => {
       <a
         href="mailto:dimejiademola5@gmail.com"
         className="button py-4 px-4 flex items-center gap-3"
-        target="_blank"
-        rel="noopener noreferrer"
       >
         Send An Email <HiOutlineMail size={30} />
       </a>
