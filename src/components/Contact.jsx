@@ -13,10 +13,6 @@ const sidelinks = [
     icon: <FaLinkedin size={30} />,
     url: "https://www.linkedin.com/in/sheriff-oladimeji-022362255/",
   },
- 
-
-
- 
 ];
 const Contact = () => {
   return (
@@ -28,8 +24,8 @@ const Contact = () => {
         Contact Me
       </h1>
       <p className="text-center">
-        I'm currently looking for new opportunities. I'm Open to junior
-        developer roles and freelancing gigs.
+        Got a project we could work on together? I'm currently looking for new
+        opportunities.
       </p>
 
       <a
