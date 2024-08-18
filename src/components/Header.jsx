@@ -2,7 +2,7 @@
 
 const Header = () => {
   const resumeLink =
-    "https://drive.google.com/uc?export=download&id=1wWauTQ-HHMXRF0ycddtbezL2G16YEvqv";
+    "https://drive.google.com/uc?export=download&id=16f1EtY0OscaTh1X0oa0lFdadKu0NhIfI";
 
   return (
     <header className="container" name="home">
