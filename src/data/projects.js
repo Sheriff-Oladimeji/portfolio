@@ -1,6 +1,21 @@
 const projects = [
   {
-    id: 1,
+    id: "1264tyhe",
+    title: "Qlip",
+    desc: "Experience the future of communication with ClearLink – where crystal-clear video conferencing meets unparalleled simplicity.",
+    tech: [
+      "Node.js/Express.js",
+      "MongoDB",
+      "Next.js",
+      "Tailwind CSS",
+      "TypeScript",
+    ],
+    image: "/qlip.png",
+    github: "https://github.com/Sheriff-Oladimeji/qlip",
+    link: "https://qlip.vercel.app/",
+  },
+  {
+    id: "12640he",
     title: "ClearLink",
     desc: "Experience the future of communication with ClearLink – where crystal-clear video conferencing meets unparalleled simplicity.",
     tech: ["Next.js", "Tailwind CSS", "TypeScript"],
@@ -9,7 +24,7 @@ const projects = [
     link: "https://clear-link-beige.vercel.app/",
   },
   {
-    id: 2,
+    id: "15yhh",
     title: "Sparkle",
     desc: "Sparkle is a creative agency website that serves as a platform to provide exceptional services to their clients, showcasing their innovative work and fostering meaningful interactions with potential partners.",
     tech: ["Next.js", "Tailwind CSS", "MongoDB"],
@@ -20,7 +35,7 @@ const projects = [
   },
 
   {
-    id: 3,
+    id: "h2hhefq3yf",
     title: "LogoIpsum",
     desc: "As part of a freelance web development project, I collaborated with a friend to create an e-learning website called Logo Ipsum for a client.",
     tech: ["React", "Tailwind CSS", "Redux"],
@@ -29,7 +44,7 @@ const projects = [
     link: "https://e-learning-efw.pages.dev/",
   },
   {
-    id: 4,
+    id: "uhuweu",
     title: "Bookr",
     desc: "Bookr is an accommodation booking website that  provides users with the ability to book hotel rooms for their vacation.Its features includes a user data form, calendar, different room types to choose from, and a cart to display the price.",
     tech: ["React", "Tailwind CSS", "Redux"],
