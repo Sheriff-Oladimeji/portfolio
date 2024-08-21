@@ -9,7 +9,7 @@ AOS.init();
 const Projects = () => {
   return (
     <div className="container mx-auto py-20" name="projects">
-      <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold mb-6 text-bold ">
+      <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold mb-6 text-bold">
         Some Things I’ve Built
       </h2>
 
@@ -20,11 +20,13 @@ const Projects = () => {
             className="relative group rounded-lg overflow-hidden shadow-lg transform transition-all duration-300 hover:scale-105 hover:shadow-2xl bg-gradient-to-br from-gray-900 via-gray-800 to-gray-700"
             data-aos="fade-up"
           >
-            <img
-              src={project.image}
-              alt={project.title}
-              className="w-full h-80 object-cover opacity-100  group-hover:scale-110 group-hover:opacity-75 transition-all duration-500"
-            />
+            <div className="w-full h-72 relative overflow-hidden">
+              <img
+                src={project.image}
+                alt={project.title}
+                className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
+              />
+            </div>
             <div className="absolute inset-0 bg-black bg-opacity-60 opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
             <div className="absolute inset-0 p-6 flex flex-col justify-between z-10 opacity-0 group-hover:opacity-100 transition-all duration-500 bg-black">
               <h2 className="text-xl sm:text-2xl font-bold text-white mb-4">
