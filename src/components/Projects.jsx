@@ -8,67 +8,68 @@ AOS.init();
 
 const Projects = () => {
   return (
-    <div className="container mx-auto py-20" name="projects">
-      <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold mb-6 text-bold">
-        Some Things I’ve Built
+    <div className="container mx-auto py-20 px-4" name="projects">
+      <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold mb-12 text-center">
+        Some Things I've Built
       </h2>
 
-      <main className="grid gap-16 sm:gap-10 md:grid-cols-2">
-        {projects.map((project) => (
+      <div className="space-y-24">
+        {projects.map((project, index) => (
           <div
             key={project.id}
-            className="relative group rounded-lg overflow-hidden shadow-lg transform transition-all duration-300 hover:scale-105 hover:shadow-2xl bg-gradient-to-br from-gray-900 via-gray-800 to-gray-700"
+            className={`flex flex-col ${
+              index % 2 === 0 ? "lg:flex-row" : "lg:flex-row-reverse"
+            } items-center gap-8 lg:gap-12`}
             data-aos="fade-up"
           >
-            <div className="w-full h-72 relative overflow-hidden">
-              <img
-                src={project.image}
-                alt={project.title}
-                className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
-              />
+            <div className="w-full lg:w-1/2">
+              <div className="relative group overflow-hidden rounded-lg shadow-lg">
+                <img
+                  src={project.image}
+                  alt={project.title}
+                  className="w-full h-auto object-cover transition-transform duration-500 group-hover:scale-110"
+                />
+                <div className="absolute inset-0 bg-black bg-opacity-50 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
+                  <div className="flex gap-4">
+                    {project.github && (
+                      <a
+                        className="text-white bg-gray-800 p-3 rounded-full hover:bg-gray-700 transition-colors duration-300"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        href={project.github}
+                      >
+                        <FiGithub size={24} />
+                      </a>
+                    )}
+                    <a
+                      className="text-white bg-gray-800 p-3 rounded-full hover:bg-gray-700 transition-colors duration-300"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      href={project.link}
+                    >
+                      <LiaExternalLinkAltSolid size={24} />
+                    </a>
+                  </div>
+                </div>
+              </div>
             </div>
-            <div className="absolute inset-0 bg-black bg-opacity-60 opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
-            <div className="absolute inset-0 p-6 flex flex-col justify-between z-10 opacity-0 group-hover:opacity-100 transition-all duration-500 bg-black">
-              <h2 className="text-xl sm:text-2xl font-bold text-white mb-4">
-                {project.title}
-              </h2>
-              <p className="text-sm text-gray-300 mb-6">{project.desc}</p>
-              <div className="flex flex-wrap gap-2 mb-4">
+            <div className="w-full lg:w-1/2">
+              <h3 className="text-2xl font-bold mb-4">{project.title}</h3>
+              <p className="text-gray-600 dark:text-gray-300 mb-6">{project.desc}</p>
+              <div className="flex flex-wrap gap-2 mb-6">
                 {project.tech.map((tool, index) => (
                   <span
                     key={index}
-                    className="px-3 py-1 rounded-full bg-gray-600 text-white text-xs font-semibold"
+                    className="px-3 py-1 rounded-full bg-gray-200 dark:bg-gray-700 text-gray-800 dark:text-gray-200 text-sm font-medium"
                   >
                     {tool}
                   </span>
                 ))}
               </div>
-              <div className="flex gap-4">
-                {project.github && (
-                  <a
-                    className="flex items-center gap-2 text-white bg-gradient-to-r from-green-400 to-blue-500 px-3 py-1 rounded-full text-sm font-semibold shadow-md hover:shadow-lg transition-shadow duration-300"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    href={project.github}
-                  >
-                    <FiGithub size={20} />
-                    <span>Code</span>
-                  </a>
-                )}
-                <a
-                  className="flex items-center gap-2 text-white bg-gradient-to-r from-green-400 to-blue-500 px-3 py-1 rounded-full text-sm font-semibold shadow-md hover:shadow-lg transition-shadow duration-300"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  href={project.link}
-                >
-                  <LiaExternalLinkAltSolid size={20} />
-                  <span>Live Demo</span>
-                </a>
-              </div>
             </div>
           </div>
         ))}
-      </main>
+      </div>
     </div>
   );
 };
