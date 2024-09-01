@@ -37,7 +37,7 @@ const projects = [
   {
     id: "h2hhefq3yf",
     title: "LogoIpsum",
-    desc: "As part of a freelance web development project, I collaborated with a friend to create an e-learning website called Logo Ipsum for a client.",
+    desc: "E-learning Platform",
     tech: ["React", "Tailwind CSS", "Redux"],
     image: "/e-learning.png",
     github: false,

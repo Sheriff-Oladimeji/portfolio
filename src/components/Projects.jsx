@@ -19,7 +19,7 @@ const Projects = () => {
             key={project.id}
             className={`flex flex-col ${
               index % 2 === 0 ? "lg:flex-row" : "lg:flex-row-reverse"
-            } items-center gap-8 lg:gap-12`}
+            } items-center gap-6 lg:gap-12`}
             data-aos="fade-up"
           >
             <div className="w-full lg:w-1/2">
@@ -55,7 +55,9 @@ const Projects = () => {
             </div>
             <div className="w-full lg:w-1/2">
               <h3 className="text-2xl font-bold mb-4">{project.title}</h3>
-              <p className="text-gray-600 dark:text-gray-300 mb-6">{project.desc}</p>
+              <p className="text-gray-600 dark:text-gray-300 mb-6">
+                {project.desc}
+              </p>
               <div className="flex flex-wrap gap-2 mb-6">
                 {project.tech.map((tool, index) => (
                   <span
