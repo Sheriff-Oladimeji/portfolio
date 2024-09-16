@@ -10,7 +10,7 @@ const Projects = () => {
   return (
     <div className="container mx-auto py-20 px-4" name="projects">
       <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold mb-12 text-center">
-        Some Things I've Built
+        Some Things I&apos;ve Built
       </h2>
 
       <div className="space-y-24">
@@ -29,7 +29,6 @@ const Projects = () => {
                   alt={project.title}
                   className="w-full h-auto object-cover transition-transform duration-500 group-hover:scale-110"
                 />
-                {/* Removed the links from here */}
               </div>
             </div>
             <div className="w-full lg:w-1/2">
