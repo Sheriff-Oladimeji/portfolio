@@ -7,6 +7,7 @@ const projects = [
       "Node.js/Express.js",
       "MongoDB",
       "Next.js",
+      "Zustand",
       "Tailwind CSS",
       "TypeScript",
     ],

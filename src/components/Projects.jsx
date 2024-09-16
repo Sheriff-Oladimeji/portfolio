@@ -36,11 +36,11 @@ const Projects = () => {
               <p className="text-gray-600 dark:text-gray-300 mb-6">
                 {project.desc}
               </p>
-              <div className="flex flex-wrap gap-2 mb-6">
+              <div className="flex flex-wrap gap-6 mb-6">
                 {project.tech.map((tool, index) => (
                   <span
                     key={index}
-                    className="px-3 py-1 rounded-full bg-gray-200 dark:bg-gray-700 text-gray-800 dark:text-gray-200 text-sm font-medium"
+                    className=" py-1 rounded-full bg-gray-200 dark:bg-gray-700 text-gray-800 dark:text-gray-200 text-sm font-medium"
                   >
                     {tool}
                   </span>
