@@ -29,28 +29,7 @@ const Projects = () => {
                   alt={project.title}
                   className="w-full h-auto object-cover transition-transform duration-500 group-hover:scale-110"
                 />
-                <div className="absolute inset-0 bg-black bg-opacity-50 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
-                  <div className="flex gap-4">
-                    {project.github && (
-                      <a
-                        className="text-white bg-gray-800 p-3 rounded-full hover:bg-gray-700 transition-colors duration-300"
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        href={project.github}
-                      >
-                        <FiGithub size={24} />
-                      </a>
-                    )}
-                    <a
-                      className="text-white bg-gray-800 p-3 rounded-full hover:bg-gray-700 transition-colors duration-300"
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      href={project.link}
-                    >
-                      <LiaExternalLinkAltSolid size={24} />
-                    </a>
-                  </div>
-                </div>
+                {/* Removed the links from here */}
               </div>
             </div>
             <div className="w-full lg:w-1/2">
@@ -67,6 +46,26 @@ const Projects = () => {
                     {tool}
                   </span>
                 ))}
+              </div>
+              <div className="flex gap-4">
+                {project.github && (
+                  <a
+                    className="text-white bg-gray-800 p-3 rounded-full hover:bg-gray-700 transition-colors duration-300"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    href={project.github}
+                  >
+                    <FiGithub size={24} />
+                  </a>
+                )}
+                <a
+                  className="text-white bg-gray-800 p-3 rounded-full hover:bg-gray-700 transition-colors duration-300"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  href={project.link}
+                >
+                  <LiaExternalLinkAltSolid size={24} />
+                </a>
               </div>
             </div>
           </div>
