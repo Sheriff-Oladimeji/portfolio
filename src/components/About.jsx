@@ -5,7 +5,7 @@ const About = () => {
       <div className="flex justify-between flex-col gap-16  md:flex-row items-center w-full">
         <div className="md:w-[100%] flex flex-col gap-6">
           <h1 className="text-3xl sm:text-4xl md:text-5xl font-bold mb-2 text-bold ">
-            Me, Myself & I
+            Me, Myself &amp; I
           </h1>
           <p className="max-w-3xl">
             {" "}
@@ -52,7 +52,7 @@ const About = () => {
             </span>
             <span>
               <p className="flex items-center gap-2">
-                <span className="text-green text-3xl">•</span> Git & GitHub
+                <span className="text-green text-3xl">•</span> Git &amp; GitHub
               </p>
               <p className="flex items-center gap-2">
                 <span className="text-green text-3xl">•</span> TypeScript
