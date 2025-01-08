@@ -1,8 +1,25 @@
 const projects = [
   {
+    id: "1264wwhe",
+    title: "Streakup",
+    desc: "Streakup is a mobile app designed to help you track your daily streaks, earn XP, compete on leaderboards, and share your progress with friends. Stay motivated and achieve your goals with ease.",
+    tech: [
+      "React Native",
+      "Next.js",
+      "Expo",
+      "Zustand",
+      "Express.js",
+      "TypeScript",
+      "Tailwind CSS",
+    ],
+    image: "/streakup.png",
+    github: "https://github.com/Sheriff-Oladimeji/streakly-landing",
+    link: "https://streakup-app.vercel.app/",
+  },
+  {
     id: "1264tyhe",
     title: "Qlip",
-    desc: "Experience the future of communication with ClearLink – where crystal-clear video conferencing meets unparalleled simplicity.",
+    desc: "Qlip is a quotes platform where you can add, share, copy, search, and filter quotes. Discover and share inspiring quotes with ease.",
     tech: [
       "Node.js/Express.js",
       "MongoDB",
@@ -18,7 +35,7 @@ const projects = [
   {
     id: "12640he",
     title: "ClearLink",
-    desc: "Experience the future of communication with ClearLink – where crystal-clear video conferencing meets unparalleled simplicity.",
+    desc: "ClearLink offers a seamless video conferencing experience with high-quality video and audio. Simplify your virtual meetings and stay connected with colleagues and clients effortlessly.",
     tech: ["Next.js", "Tailwind CSS", "TypeScript"],
     image: "/ClearLink.png",
     github: "https://github.com/Sheriff-Oladimeji/ClearLink",
@@ -27,18 +44,16 @@ const projects = [
   {
     id: "15yhh",
     title: "Sparkle",
-    desc: "Sparkle is a creative agency website that serves as a platform to provide exceptional services to their clients, showcasing their innovative work and fostering meaningful interactions with potential partners.",
+    desc: "Sparkle is a creative agency website that showcases innovative work and provides exceptional services to clients. Foster meaningful interactions with potential partners and elevate your brand.",
     tech: ["Next.js", "Tailwind CSS", "MongoDB"],
-
     image: "/sparkle.png",
     github: "https://github.com/Sheriff-Oladimeji/Sparkle",
     link: "https://sparkle-mu.vercel.app/",
   },
-
   {
     id: "h2hhefq3yf",
     title: "LogoIpsum",
-    desc: "E-learning Platform",
+    desc: "LogoIpsum is an e-learning platform that offers a wide range of courses to help you expand your knowledge and skills. Learn at your own pace with high-quality content and interactive features.",
     tech: ["React", "Tailwind CSS", "Redux"],
     image: "/e-learning.png",
     github: false,
@@ -47,9 +62,8 @@ const projects = [
   {
     id: "uhuweu",
     title: "Bookr",
-    desc: "Bookr is an accommodation booking website that  provides users with the ability to book hotel rooms for their vacation.Its features includes a user data form, calendar, different room types to choose from, and a cart to display the price.",
+    desc: "Bookr is an accommodation booking website that allows users to book hotel rooms for their vacations. Features include a user data form, calendar, various room types, and a cart to display prices.",
     tech: ["React", "Tailwind CSS", "Redux"],
-
     image: "/bookr.png",
     github: "https://github.com/Sheriff-Oladimeji/bookr",
     link: "https://bookr.pages.dev/",
