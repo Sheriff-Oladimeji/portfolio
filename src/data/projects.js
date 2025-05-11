@@ -1,5 +1,38 @@
 const projects = [
   {
+    id: "qlipify123",
+    title: "Qlipify",
+    desc: "Qlipify helps you learn faster, smarter, and efficiently. Generate summaries or notes from content, access a personalized AI assistant, create flashcards or quizzes, and translate outputs into any language. Share and collaborate with others through shareable links.",
+    tech: [
+      "Next.js",
+      "TypeScript",
+      "Tailwind CSS",
+      "Gemini",
+      "Supabase",
+      "Zustand"
+    
+    ],
+    image: "/Qlipify.png",
+    github: false,
+    link: "https://www.qlipify.com/",
+  },
+  {
+    id: "youtranscripts456",
+    title: "YouTranscripts",
+    desc: "YouTranscripts is a tool for generating YouTube transcripts quickly in any language. Features multi-lingual interface support, transcript copying, and export options to PDF, SRT, CSV, and text formats. Translate generated transcripts easily for any YouTube video with available captions.",
+    tech: [
+      "Next.js",
+      "TypeScript",
+      "Tailwind CSS",
+      "i18n",
+      "YouTube API",
+      "Zustand",
+    ],
+    image: "/youtranscripts.png",
+    github: false,
+    link: "https://www.youtranscripts.com/",
+  },
+  {
     id: "1264wwhe",
     title: "Streakup",
     desc: "Streakup is a mobile app designed to help you track your daily streaks, earn XP, compete on leaderboards, and share your progress with friends. Stay motivated and achieve your goals with ease.",
